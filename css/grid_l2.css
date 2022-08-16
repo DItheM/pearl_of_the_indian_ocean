@@ -1,0 +1,113 @@
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: repeat(4, 200px); */
+    grid-auto-rows: minmax(200px, auto);
+    gap: 5px;
+    grid-template-areas: 
+    "head_pic head_pic head_pic head_pic head_pic"
+    "head_pic_2 head_pic_2 head_pic_2 head_pic_2 head_pic_2"
+    "pic_2 pic_2 info_1 info_1 pic_1"
+    "pic_3 pic_4 pic_5 pic_6 pic_6";
+}
+
+
+
+
+body {
+    background-image: url("images/art-background-blur-bright.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+#grid div {
+    text-align: center;
+    border: 1px solid rgba(24, 27, 29, 0.726);
+}
+
+#head_pic {
+    grid-area: head_pic;
+    /* background-color: aqua; */
+    background-image: url("images/galle\ 4.jpg");
+    background-repeat: none;
+    background-size: cover;
+    background-position:center;
+}
+#head_pic p {
+    font-size: 2em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background-color: rgba(240, 248, 255, 0.562);
+}
+
+#head_pic_2 {
+    grid-area: head_pic_2;
+    /* background-color: blue; */
+    background-image: url("images/galle\ 2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position-y: -190px; */
+    background-position:center;
+}
+
+#info_1 {
+    grid-area: info_1;
+    background-color: rgba(115, 215, 255, 0.582);
+}
+#info_1 p {
+    padding: 35px 20px;
+    /* padding-top: 35px; */
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+#pic_1 {
+    grid-area: pic_1;
+    /* background-color: chartreuse; */
+    background-image: url("images/galle\ 7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#info_2 {
+    grid-area: info_2;
+    background-color: rgb(0, 153, 255);
+}
+
+#pic_2 {
+    grid-area: pic_2;
+    /* background-color: rgb(252, 48, 167); */
+    background-image: url("images/galle\ 8.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#pic_3{
+    grid-area: pic_3;
+    background-image: url("images/galle\ 1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#pic_4{
+    grid-area: pic_4;
+    background-image: url("images/galle\ 3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#pic_5{
+    grid-area: pic_5;
+    background-image: url("images/galle\ 6.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#pic_6{
+    grid-area: pic_6;
+    background-image: url("images/galle\ 5.jpg");
+    background-size: cover;
+    background-position: center;
+}

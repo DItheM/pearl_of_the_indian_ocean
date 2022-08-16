@@ -1,0 +1,161 @@
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: repeat(4, 200px); */
+    grid-auto-rows: minmax(200px, auto);
+    gap: 5px;
+    grid-template-areas: 
+    "head_pic head_pic head_pic head_pic head_pic"
+    "info_1 info_1 head_pic_2 head_pic_2 head_pic_2"
+    "pic_2 pic_2 pic_2 pic_2 pic_2"
+    "pic_3 pic_4 pic_5 pic_6 pic_1";
+}
+
+
+
+
+body {
+    background-image: url("images/art-background-blur-bright.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#grid div {
+    text-align: center;
+    border: 1px solid rgba(24, 27, 29, 0.726);
+}
+
+#head_pic {
+    grid-area: head_pic;
+    /* background-color: aqua; */
+    background-image: url("images/about\ us\ 1.jpg");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+#head_pic p {
+    font-size: 2em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background-color: rgba(240, 248, 255, 0.562);
+}
+
+#head_pic_2 {
+    grid-area: head_pic_2;
+    /* background-color: blue; */
+    background-image: url("images/about\ us\ 2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position-y: -190px; */
+    background-position:center;
+}
+
+#info_1 {
+    grid-area: info_1;
+    background-color: rgba(115, 215, 255, 0.582);
+}
+#info_1 p {
+    padding: 35px 20px;
+    /* padding-top: 35px; */
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+#pic_1 {
+    grid-area: pic_1;
+    background-color: rgba(38, 59, 59, 0.829);
+}
+
+#info_2 {
+    grid-area: info_2;
+    background-color: rgb(0, 153, 255);
+}
+
+#pic_2 {
+    grid-area: pic_2;
+    /* background-color: rgb(252, 48, 167); */
+    background-image: url("images/about\ us\ 3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#pic_3{
+    grid-area: pic_3;
+    background-color: rgba(38, 59, 59, 0.829);
+}
+
+#pic_4{
+    grid-area: pic_4;
+    background-color: rgba(38, 59, 59, 0.829);
+}
+
+#pic_5{
+    grid-area: pic_5;
+    background-color: rgba(38, 59, 59, 0.829);
+}
+#contact {
+    color: white;
+    font-size: 30px;
+    padding-top: 55px;
+}
+#name {
+    color: white;
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 10px;
+}
+#logo {
+    width: 30px;
+    padding-top: 20px;
+}
+
+#pic_6{
+    grid-area: pic_6;
+    background-color: rgba(38, 59, 59, 0.829);
+}
+#grid .fa {
+    display: block;
+    color: white;
+    font-size: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    transition: all 200ms;
+}
+#grid .fa:hover {
+    color: aqua;
+}
+#pic_1, #pic_3, #pic_4, #pic_6 {
+    transition: all 500ms;
+}
+
+#pic_1:hover {
+    background-color: rgba(62, 90, 90, 0.829);
+    border-color: rgba(184, 189, 194, 0.404);
+}
+#pic_3:hover {
+    background-color: rgba(62, 90, 90, 0.829);
+    border-color: rgba(184, 189, 194, 0.404);
+}
+#pic_4:hover {
+    background-color: rgba(62, 90, 90, 0.829);
+    border-color: rgba(184, 189, 194, 0.404);
+}
+#pic_6:hover {
+    background-color: rgba(62, 90, 90, 0.829);
+    border-color: rgba(184, 189, 194, 0.404);
+}
+
+#pic_1:active {
+    background-color: rgba(93, 128, 128, 0.829);
+}
+#pic_3:active {
+    background-color: rgba(93, 128, 128, 0.829);
+}
+#pic_4:active {
+    background-color: rgba(93, 128, 128, 0.829);
+}
+#pic_6:active {
+    background-color: rgba(93, 128, 128, 0.829);
+}
